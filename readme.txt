@@ -1,16 +1,6 @@
-交卷方式不限, 可用 github, google drive, email 附件
+### 請用 node.js 開發 api server, 並且滿足以下需求  
 
-我會下載程式碼來執行, 並且以附件的程式碼來驗證
-
-測試 server 的程式碼如附件
-由於 gmail 安全掃描無法寄送 js 檔案
-請將附件裡的 .txt 副檔名改成 .js 
-
-
-[題目]
-請用 node.js 開發 api server, 並且滿足以下需求  
-
-(1) 當 client 呼叫 GET http://localhost:8080/hello/mark
+## 當 client 呼叫 GET http://localhost:8080/hello/mark
 請回傳 json object 
 { "reply" : "hello mark" }
 

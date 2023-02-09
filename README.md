@@ -1,10 +1,18 @@
-# Server部分於Server資料夾之中，包含 server.js 與 package.json。
+# NodeJs API
 
-(1) 當 client 呼叫 GET http://localhost:8080/hello/mark
-請回傳 json object 
-{ "reply" : "hello mark" }
+## 當 client 呼叫 GET http://localhost:8080/hello/mark
 
-如果 request 的 mark 替換成 annie, response 會變成 hello annie
+```js
+app.get('/hello/:name',(req, res) => {
+	res.setHeader("Content-Type", "application/json")
+	let jsonBody = {
+    "reply" : "hello "+req.params.name
+  }
+  //回傳結果
+	console.log(JSON.stringify(jsonBody))
+	res.json(jsonBody)
+});
+```
 
 
 (2) 當 client 呼叫 POST http://localhost:8080/hello/mark, 並且 request body 為 { "job" : "ui designer" }  
