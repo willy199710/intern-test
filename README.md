@@ -1,6 +1,6 @@
 # NodeJs API
 
-##使用 Client 呼叫 GET API
+## 使用 Client 呼叫 GET API
 
 ```
 當 client 呼叫 POST http://localhost:8080/hello/mark
@@ -8,6 +8,8 @@
 { "reply" : "hello mark" }
 如果 request 的 mark 替換成 annie, response 會變成 hello annie
 ```
+
+下方為 GET API 之程式語法
 
 ```js
 app.get('/hello/:name',(req, res) => {
