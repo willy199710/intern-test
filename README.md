@@ -1,5 +1,26 @@
 NodeJs API
 
+## 插件與server建置
+
+### server.js
+```js
+//插件
+const express = require('express')
+const request = require('request')
+const fs = require('fs');
+const app = express()
+
+// 使POST之 Request json可成功讀取(middle ware)
+app.use(express.json())
+
+//Server 偵測port:8080之連線
+app.listen(8080,()=>{
+	console.log("Server listening port 8080")
+});
+
+```
+
+
 ## 使用 Client 呼叫 GET API
 
 ```
@@ -11,7 +32,7 @@ NodeJs API
 
 下方為 GET API 之程式語法
 
-### Server.js
+### server.js
 ```js
 app.get('/hello/:name',(req, res) => {
 	res.setHeader("Content-Type", "application/json")
@@ -58,7 +79,7 @@ function getGetRequestPromise(url) {
 ui designer 換成 programmer, response 會變成 mark's job is programmer
 ```
 
-### Server.js
+### server.js
 ```js
 app.post('/hello/:name',(req,res) => {
     res.setHeader("Content-Type", "application/json")
