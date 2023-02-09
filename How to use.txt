@@ -1,0 +1,2 @@
+1. 使用 npm install 指令下載package.json內之所需插件
+2. 使用 npm run 執行 server.js
