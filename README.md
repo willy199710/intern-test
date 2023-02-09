@@ -42,7 +42,7 @@ function getGetRequestPromise(url) {
 ```
 
 成功畫面如下圖
-![image](https://github.com/willy199710/intern-test/pic/get-hello-name.JPG)
+![image](https://github.com/willy199710/intern-test/blob/master/pic/get-hello-name.JPG)
 
 ***
 
@@ -80,7 +80,7 @@ app.post('/hello/:name',(req,res) => {
 });
 ```
 成功畫面如下圖
-![image](https://github.com/willy199710/intern-test/pic/post-hello-name.JPG)
+![image](https://github.com/willy199710/intern-test/blob/master/pic/post-hello-name.JPG)
 
 ***
 
@@ -115,4 +115,4 @@ app.post('/file/:fileparameter',(req,res) =>{
 });
 ```
 成功畫面如下圖
-![image](https://github.com/willy199710/intern-test/pic/post-hello-name.JPG)
+![image](https://github.com/willy199710/intern-test/blob/master/pic/post-file.JPG)
