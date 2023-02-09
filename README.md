@@ -45,23 +45,6 @@ app.get('/hello/:name',(req, res) => {
 });
 ```
 
-### client-test.js
-```js
-function getGetRequestPromise(url) {
-  return new Promise((resolve, reject) => {
-    request.get({
-        url: url
-      }, function(error, response, body) {
-        if (error) {
-          return reject(error);
-        }
-        resolve(body);
-      }
-    );
-  });
-}
-```
-
 成功畫面如下圖
 ![image](https://github.com/willy199710/intern-test/blob/master/pic/get-hello-name.JPG)
 
