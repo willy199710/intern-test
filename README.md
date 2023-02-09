@@ -1,6 +1,13 @@
 # NodeJs API
 
-## 當 client 呼叫 GET http://localhost:8080/hello/mark
+##使用 Client 呼叫 GET API
+
+```
+當 client 呼叫 POST http://localhost:8080/hello/mark
+請回傳 json object 
+{ "reply" : "hello mark" }
+如果 request 的 mark 替換成 annie, response 會變成 hello annie
+```
 
 ```js
 app.get('/hello/:name',(req, res) => {
@@ -13,6 +20,8 @@ app.get('/hello/:name',(req, res) => {
 	res.json(jsonBody)
 });
 ```
+
+
 
 
 (2) 當 client 呼叫 POST http://localhost:8080/hello/mark, 並且 request body 為 { "job" : "ui designer" }  
