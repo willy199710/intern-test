@@ -45,7 +45,7 @@ app.get('/hello/:name',(req, res) => {
 });
 ```
 
-成功畫面如下圖
+用Postman進行API測試，成功畫面如下圖
 ![image](https://github.com/willy199710/intern-test/blob/master/pic/get-hello-name.JPG)
 
 ***
@@ -83,7 +83,7 @@ app.post('/hello/:name',(req,res) => {
 	
 });
 ```
-成功畫面如下圖
+用Postman進行API測試，成功畫面如下圖
 ![image](https://github.com/willy199710/intern-test/blob/master/pic/post-hello-name.JPG)
 
 ***
@@ -118,5 +118,5 @@ app.post('/file/:fileparameter',(req,res) =>{
 
 });
 ```
-成功畫面如下圖
+用Postman進行API測試，成功畫面如下圖
 ![image](https://github.com/willy199710/intern-test/blob/master/pic/upload-file.JPG)
