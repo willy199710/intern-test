@@ -2,8 +2,9 @@ NodeJs API
 
 ## 插件與server建置
 
-### server.js
 ```js
+//server.js
+
 //插件
 const express = require('express')
 const request = require('request')
@@ -32,8 +33,9 @@ app.listen(8080,()=>{
 
 下方為 GET API 之程式語法
 
-### server.js
 ```js
+//server.js
+
 app.get('/hello/:name',(req, res) => {
 	res.setHeader("Content-Type", "application/json")
 	let jsonBody = {
@@ -62,8 +64,10 @@ app.get('/hello/:name',(req, res) => {
 ui designer 換成 programmer, response 會變成 mark's job is programmer
 ```
 
-### server.js
+
 ```js
+//server.js
+
 app.post('/hello/:name',(req,res) => {
     res.setHeader("Content-Type", "application/json")
 	let body = ""
@@ -98,8 +102,10 @@ app.post('/hello/:name',(req,res) => {
 { "size" : "save file szie 200 kb" }
 ```
 
-### Server.js
+
 ```js
+//server.js
+
 app.post('/file/:fileparameter',(req,res) =>{
 	let writeStream = fs.createWriteStream('test.mp4') //建立寫入的Stream
 	req.on('data',(chunk)=>{
